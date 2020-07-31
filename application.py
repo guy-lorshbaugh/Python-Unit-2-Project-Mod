@@ -2,7 +2,9 @@ import copy
 import constants
 
 def clean_data():
-    """Repacks constants.py into a more easily iterated list.  The height value will be an integer, experience values are converted from YES/NO to Booleans, and the guardians value will now be enclosed in a list without 'and.'
+    """Repacks constants.py into a more easily iterated list.
+    The height value will be an integer, experience values are converted from YES/NO to Booleans, 
+    and the guardians value will now be enclosed in a list without 'and.'
     """
     players_copy = copy.deepcopy(players)
     for player in players_copy:
